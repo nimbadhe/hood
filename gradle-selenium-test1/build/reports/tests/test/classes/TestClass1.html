@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class TestClass1</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class TestClass1</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; TestClass1</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.231s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Test1</td>
+<td class="success">9.231s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:28:07.747 [Test worker] INFO  TestSuite - Test: Test1 at:12:28:07.747
+12:28:07.748 [Test worker] INFO  TestClass1 - Let's open up the browser with Library page!
+12:28:08.152 [Test worker] DEBUG io.github.bonigarcia.wdm.Preferences - Preference found chrome78=78.0.3904.105 (valid until 2019-11-28 10:41:56)
+12:28:08.152 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+12:28:08.166 [Test worker] DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 78.0.3904.105 found in cache
+12:28:08.167 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/mihkel.sorra/.m2/repository/webdriver/chromedriver/mac64/78.0.3904.105/chromedriver
+12:28:11.399 [Test worker] INFO  TestClass1 - Create the Author!
+12:28:11.670 [Test worker] INFO  pageObjects.CreateAuthor - Filling Author First Name with: Cartul
+12:28:11.912 [Test worker] INFO  pageObjects.CreateAuthor - Filling Author Family Name with: Peet
+12:28:12.026 [Test worker] INFO  pageObjects.CreateAuthor - Filling Author birth date with: 22/05/1922
+12:28:12.143 [Test worker] INFO  pageObjects.CreateAuthor - Filling Author death date with: 13/02/2019
+12:28:12.887 [Test worker] INFO  TestClass1 - Author ID is: 5dde4fbe0e807700146a6077
+12:28:12.888 [Test worker] INFO  TestClass1 - Create the Book with that Author!
+12:28:13.244 [Test worker] INFO  pageObjects.CreateBook - Filling Book Title with: Laughing Yoga
+12:28:13.404 [Test worker] INFO  pageObjects.CreateBook - Filling Book Summary with: The funniest book ever
+12:28:13.575 [Test worker] INFO  pageObjects.CreateBook - Filling ISBN with: 87654321
+12:28:13.689 [Test worker] INFO  pageObjects.CreateBook - Selecting Author by ID: 5dde4fbe0e807700146a6077
+12:28:13.770 [Test worker] INFO  pageObjects.CreateBook - Selecting genre: Fiction
+12:28:13.770 [Test worker] INFO  pageObjects.CreateBook - (Genre ID is: 5b6714c93809970014e31c9a )
+12:28:14.632 [Test worker] INFO  TestClass1 - Book ID is: 5dde4fc00e807700146a6078
+12:28:14.632 [Test worker] INFO  TestClass1 - Check the Book from Books page!
+12:28:16.483 [Test worker] INFO  pageObjects.CheckBook - Book found: &lt;a href=&quot;/catalog/book/5dde4fc00e807700146a6078&quot;&gt;Laughing Yoga&lt;/a&gt;
+12:28:16.483 [Test worker] INFO  pageObjects.CheckBook - Opening Your Book with ID 5dde4fc00e807700146a6078 from Books Page!
+12:28:16.979 [Test worker] INFO  TestSuite - Result was: success
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Nov 27, 2019 12:28:07 PM com.codeborne.selenide.drivercommands.LazyDriver getAndCheckWebDriver
+INFO: No webdriver is bound to current thread: 10 - let's create a new webdriver
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 38033
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Nov 27, 2019 12:28:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 27, 2019 12:28:09 PM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+INFO: Set browser size to 1366x768
+Nov 27, 2019 12:28:10 PM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+INFO: BrowserName=chrome Version=78.0.3904.108 Platform=MAC
+Nov 27, 2019 12:28:10 PM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+INFO: Selenide v. 5.3.1
+Nov 27, 2019 12:28:10 PM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+Nov 27, 2019 12:28:10 PM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 10: ChromeDriver -&gt; ChromeDriver: chrome on MAC (0f4fdedda6addaf5ee5461e06d1a0860)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10</a> at Nov 27, 2019 12:28:17 PM</p>
+</div>
+</div>
+</body>
+</html>

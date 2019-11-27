@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="basic selenide tests" verbose="2" parallel="false" thread-count="1" preserve-order="true" >
+
+    <listeners>
+        <listener class-name="helpers.CustomListener" />
+    </listeners>
+
+    <test name="First test" preserve-order="true">
+        <groups>
+            <dependencies>
+            </dependencies>
+        </groups>
+        <classes>
+            <class name="TestClass1" />
+        </classes>
+    </test>
+
+</suite>
+
