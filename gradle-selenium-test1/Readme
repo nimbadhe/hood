@@ -1,0 +1,8 @@
+Import this project to IntelliJ IDEA CE
+You also need gradle and GIT to be installed
+After project importing, navigate in Intellij to src->main->java->helpers
+open TestBase and try to download/add the missing packages/modules.
+For example "import org.slf4j.Logger" -> click on it and add to project
+Check and add missing packages also in src->main->test->java->TestClass1 
+Then right-click on project root [gradle-selenium-test] -> Run 'Tests in 'gradle-sel...'
+Observe
