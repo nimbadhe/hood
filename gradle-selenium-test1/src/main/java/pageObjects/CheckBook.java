@@ -29,6 +29,7 @@ public class CheckBook {
             if(anchor.getAttribute("href").contains(bookIDValue)) {
                 LOGGER.info("Book found: "+anchor);
                 LOGGER.info("Opening Book with ID "+bookIDValue+" from Books Page!");
+                Assert.assertTrue(anchor.is(Condition.visible));
                 anchor.click();
                 break;
             }
