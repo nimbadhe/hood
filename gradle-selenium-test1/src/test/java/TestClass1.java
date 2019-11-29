@@ -53,7 +53,7 @@ public class TestClass1 extends TestBase {
 
         LOGGER.info("Check the Book from Books page!");
         open("https://raamatukogu.herokuapp.com/catalog/books/");
-        booksPage.checkBooks(bookID);
+        booksPage.checkBooks(bookID, bookTitle, ISBN);
 
     }
 
