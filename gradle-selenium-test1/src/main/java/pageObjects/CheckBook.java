@@ -34,5 +34,9 @@ public class CheckBook {
                 break;
             }
         }
+        SelenideElement Title = $(By.cssSelector("div.col-sm-10")).shouldHave(Condition.text(bookTitleValue));
+        SelenideElement ISBN = $(By.cssSelector("div.col-sm-10")).shouldHave(Condition.text(ISBNValue));
+        assert(Title.getText()).contains(bookTitleValue);
+        assert(ISBN.getText()).contains(ISBNValue);
     }
 }
